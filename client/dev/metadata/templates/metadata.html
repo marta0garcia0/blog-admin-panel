@@ -1,0 +1,26 @@
+<div class="metadata-container">
+  <form class="main-form">
+
+    <h1 class="metadata-title">{{title}}</h1>
+
+    <input type="text"
+           name="metadata"
+           [(ngModel)]="metadataForm"
+           [class.metadata-error]="!metadataForm.length"
+           placeholder="Link"
+           autofocus />
+    
+      <button class="round" (click)="add(metadataForm)"
+            [disabled]="!metadataForm.length">+</button>
+  </form>
+
+  <div class="main-list">
+    <div *ngFor="let metadata of metadataDisplay;"
+         class="main-item"
+         (click)="remove(metadata);">
+      <list-item-delete
+        [item]="metadata">
+      </list-item-delete>
+    </div>
+  </div>
+</div>

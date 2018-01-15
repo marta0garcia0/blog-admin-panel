@@ -1,0 +1,29 @@
+.metadata-container {
+  max-width: 400px;
+  margin: 30px 0 30px ;
+  padding: 20px 10px 10px 10px;
+  box-shadow: 0 -1px 0 #e5e5e5,
+              0 0 2px rgba(0,0,0,.12),
+              0 2px 4px rgba(0,0,0,.24);
+}
+
+.metadata-container .metadata-title {
+  padding: 5px;
+  background-color: #fff;
+  position: absolute;
+  font-size: 15px;
+  margin-top: -35px;
+}
+
+.metadata-container input {
+  border: none;
+  border-bottom: 2px solid #ddd;
+  font-size: 17px;
+  padding: 5px 3px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.metadata-container input:focus {
+  outline: 0;
+}
